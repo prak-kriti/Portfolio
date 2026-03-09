@@ -609,7 +609,14 @@ const styles = `
     .work-desc { font-size: 13.5px; }
 
     .brain-scene { height: 360px; border-radius: 10px; }
-    .insight-card { width: 190px; padding: 14px 14px 12px; }
+    .insight-card { 
+  width: 160px; 
+  padding: 12px 12px 10px; 
+  left: 50% !important; 
+  right: auto !important; 
+  transform: translateX(-50%);
+  top: 30% !important;
+  }
     .insight-text { font-size: 12px; }
     .thought-pill { font-size: 9.5px; padding: 7px 12px; }
 
@@ -943,6 +950,16 @@ function ExploringSection() {
   const getInsightPos = (id) => {
     const o = displayOffsets[id];
     if (!o) return {};
+    const isMobile = window.innerWidth < 900;
+    if (isMobile) {
+      return {
+        left: "10%",
+        right: "10%",
+        top: "25%",
+        width: "80%",
+        transform: "none",
+      };
+    }
     return {
       left: o.x > 0 ? `calc(50% + ${o.x + 24}px)` : "auto",
       right: o.x <= 0 ? `calc(50% + ${-o.x + 24}px)` : "auto",
