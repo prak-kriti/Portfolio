@@ -221,7 +221,7 @@ const styles = `
     padding: 20px 40px 20px 20px;
   }
   .photo-frame {
-    position: relative; width: 340px;
+    position: relative; width: 350px;
     flex-shrink: 0; padding-bottom: 24px;
   }
   .photo-border {
@@ -565,7 +565,8 @@ const styles = `
     .hero-left { display: flex; flex-direction: column; align-items: center; }
     .hero-right { order: -1; padding: 8px 20px; justify-content: center; }
     .hero-desc { margin: 0 auto 36px; max-width: 480px; }
-    .photo-frame { width: 260px; }
+    .photo-frame { width: 160px; }
+    .photo-inner img { height: 200px; }
 
     .section { padding: 64px 28px; }
     .section-title { margin-bottom: 36px; }
@@ -586,10 +587,12 @@ const styles = `
     .hero-name { font-size: 36px; white-space: normal; }
     .hero-tag { font-size: 10px; padding: 4px 11px; }
     .hero-desc { font-size: 14.5px; }
-    .photo-frame { width: 200px; }
-    .photo-badge { left: -8px; padding: 7px 10px; }
+    .photo-frame { width: 160px; padding-bottom: 12px; }
+    .photo-inner img { height: 220px; }
+    .photo-badge { font-size: 9px; padding: 6px 8px; left: -4px; white-space: normal; max-width: 130px; 
+    .photo-border { top: 8px; left: 8px; right: -8px; bottom: -8px; }
     .badge-top { font-size: 9px; }
-    .badge-val { font-size: 11px; }
+    .badge-val { font-size: 10px; }
     .photo-monogram { width: 40px; height: 40px; font-size: 13px; right: -12px; }
     .photo-initials { font-size: 52px; }
 
