@@ -1,3 +1,4 @@
+Personal portfolio website built with React + Vite. Features sections for projects, work experience, an interactive AI exploring scene, and beyond-tech interests. Responsive across all devices.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
